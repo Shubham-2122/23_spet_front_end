@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li:first-child {
+            background-color: aqua;
+        }
+
+        ul li:last-child {
+            background-color: yellow;
+        }
+
+        ul li:nth-child(3) {
+            background-color: lightcoral;
+        }
+
+        ul li:nth-last-child(2) {
+            background-color: lime;
+        }
+
+        ul li:nth-child(odd) {
+            background-color: lightgreen;
+        }
+
+        ul li:nth-child(even) {
+            background-color: magenta;
+        }
+
+        .main {
+            height: 200px;
+            width: 200px;
+            border: 2px solid;
+            transition: 1s;
+        }
+
+        .main:hover {
+            background-color: lightcoral;
+            border-radius: 50%;
+            transform: translate(100px);
+        }
+        input{
+            margin-top: 20px;
+            border: none;
+        }
+        input:focus{
+            background-color: lightcoral;
+            border: none;
+            outline: 2px solid green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- : class 
+    :: element  -->
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+        <li>five</li>
+        <li>six</li>
+        <li>seven</li>
+    </ul>
+
+    <div class="main">
+
+    </div>
+
+    <!-- hover :- 1) self 2)perent hover -> child apply-->
+
+    <input type="text" placeholder="Enter your name">
+
+</body>
+
+</html>
