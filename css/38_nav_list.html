@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ullist{
+            list-style: none;
+        }
+        .ullist .list{
+            display: inline-block;
+            background-color: lightcoral;
+            padding: 10px 20px;
+            position: relative;
+        }
+        .nav{
+            position: absolute;
+            background: aqua;
+            list-style: none;
+            top: 100%;
+            left: 0px;
+            padding: 0px;
+            display: none;
+        }
+        .nav li{
+            padding: 6px 12px;
+            border: 2px solid;
+        }
+        .list:hover .nav{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul class="ullist">
+        <li class="list">Home
+            <ul class="nav">
+                <li>Home 1</li>
+                <li>Home 2</li>
+                <li>Home 3</li>
+                <li>Home 4</li>
+            </ul>
+        </li>
+        <li class="list">About
+            <ul class="nav">
+                <li>about 1</li>
+                <li>about 2</li>
+                <li>about 3</li>
+                
+            </ul>
+        </li>
+        <li class="list">Contact</li>
+        <li class="list">Help</li>
+    </ul>
+</body>
+</html>
