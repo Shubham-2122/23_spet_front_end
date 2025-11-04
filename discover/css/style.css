@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ultilies / reuse */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#header {
+    background: url("/Images/Header.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo {
+    width: 70px;
+}
+
+.ul-nav .li-nav {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.li-nav .nav-a {
+    font-size: 23px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #003a3a;
+    font-weight: 700;
+    font-family: "Roboto Condensed";
+}
+
+.icons i {
+    color: #003a3a;
+    font-size: 23px;
+}
+
+.header-content .header-h2 {
+    font-size: 58px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 800;
+    font-family: "BioRhyme Expanded";
+}
+
+.header-content .header-h1 {
+    font-size: 58px;
+    text-transform: uppercase;
+    color: #003a3a;
+    font-weight: 800;
+    font-family: "BioRhyme Expanded";
+}
+
+.header-content .header-p {
+
+    font-size: 33px;
+    color: #003a3a;
+    font-weight: 400;
+    font-family: "BioRhyme";
+}
+
+.btn-header {
+    width: 200px;
+    font-size: 29px;
+    letter-spacing: 3px;
+    padding: 5px 30px;
+    color: #f5c4c3;
+    background-color: #003a3a;
+    font-weight: 300;
+    font-family: "Roboto";
+    text-align: center;
+}
