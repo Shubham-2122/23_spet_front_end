@@ -14,12 +14,14 @@
     background: url("/Images/Header.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    padding: 20px 0px;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .nav .logo {
@@ -45,33 +47,45 @@
     font-size: 23px;
 }
 
+.icons .bar {
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    padding: 30px 0px;
+    font-family: "BioRhyme Expanded";
+}
+
 .header-content .header-h2 {
-    font-size: 58px;
+    /* min,vw,max */
+    font-size: clamp(20px, 6.5vw, 58px);
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 800;
-    font-family: "BioRhyme Expanded";
+
 }
 
 .header-content .header-h1 {
-    font-size: 58px;
+    font-size: clamp(20px, 6.5vw, 58px);
     text-transform: uppercase;
     color: #003a3a;
     font-weight: 800;
-    font-family: "BioRhyme Expanded";
 }
 
 .header-content .header-p {
-
+    margin: 30px 0px;
     font-size: 33px;
+    font-size: clamp(18px, 3.5vw, 33px);
     color: #003a3a;
     font-weight: 400;
-    font-family: "BioRhyme";
 }
 
 .btn-header {
-    width: 200px;
-    font-size: 29px;
+    width: 250px;
+    font-size: clamp(18px, 3.5vw, 33px);
     letter-spacing: 3px;
     padding: 5px 30px;
     color: #f5c4c3;
@@ -79,4 +93,54 @@
     font-weight: 300;
     font-family: "Roboto";
     text-align: center;
+    margin: 0 auto;
+}
+
+/* sec1 start */
+#sec1 {
+    padding: 50px 0px;
+    background-color: #003a3a;
+}
+
+#sec1 .row {
+    display: flex;
+}
+
+#sec1 .row .col-6 {
+    width: 60%;
+}
+
+#sec1 .row .col-4 {
+    width: 40%;
+}
+
+.sec1-img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sec1-h1 {
+    width: 80%;
+     font-size: clamp(20px, 4.5vw, 42px);
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "BioRhyme Expanded";
+}
+
+.sec1-p {
+    font-size: clamp(18px, 3.5vw, 31px);
+    width: 70%;
+    margin: 40px auto;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+.sec1-btn{
+    width: 130px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 50px;
+    border: 1px solid white;
+    color: white;
 }
