@@ -121,7 +121,7 @@
 
 .sec1-h1 {
     width: 80%;
-     font-size: clamp(20px, 4.5vw, 42px);
+    font-size: clamp(20px, 4.5vw, 42px);
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
@@ -136,11 +136,79 @@
     font-weight: 400;
     font-family: "Roboto";
 }
-.sec1-btn{
+
+.sec1-btn {
     width: 130px;
     text-align: center;
     padding: 10px;
     margin: 0 50px;
     border: 1px solid white;
     color: white;
+}
+
+/* sec2 */
+#sec2 {
+    padding: 30px 0px;
+    background-color: #f5c4c3;
+}
+
+#sec2 .sec2-h1 {
+     font-size: clamp(20px, 4.5vw, 42px);
+    text-transform: uppercase;
+    color: #003a3a;
+    font-weight: 700;
+    font-family: "BioRhyme Expanded";
+    text-align: center;
+}
+
+#sec2 .sec2-p {
+    font-size: clamp(18px, 3.7vw, 33px);
+    color: #003a3a;
+    font-weight: 400;
+    font-family: "Roboto";
+    text-align: center;
+}
+.make{
+    margin-top: 20px;
+}
+.make .row {
+    display: flex;
+}
+
+.make .row .col {
+    width: 33.33%;
+}
+
+.card .card-img {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.card-content {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.card-content .card-h3 {
+
+    font-size: clamp(20px, 3.5vw, 29px);
+    color: #003a3a;
+    font-weight: 700;
+    font-family: "BioRhyme";
+}
+
+.card-content .card-p {
+     font-size: clamp(18px, 3.5vw, 25px);
+    color: #000000;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin: 20px 0px;
+}
+
+.card-content .card-a {
+
+    font-size: clamp(16px, 2.5vw, 21px);
+    color: #003a3a;
+    font-weight: 800;
+    font-family: "BioRhyme";
 }

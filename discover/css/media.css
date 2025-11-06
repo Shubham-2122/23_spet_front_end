@@ -18,6 +18,14 @@
     .header-content {
         width: 100%;
     }
+    .make .row{
+        display: block;
+    }
+    .make .row .col{
+        width: 70%;
+        margin: 10px auto;
+        box-shadow: 0 0 5px 5px gray;
+    }
 }
 
 @media only screen and (max-width:576px) {
@@ -47,6 +55,10 @@
         width: 100%;
         text-align: center;
         margin: 10px 0px;
+    }
+     .make .row .col{
+        width: 90%;
+        
     }
 
 }
