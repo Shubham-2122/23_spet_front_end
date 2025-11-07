@@ -60,5 +60,12 @@
         width: 90%;
         
     }
+    #foot .row{
+        flex-direction: column;
+    } 
+    #foot .row .col{
+        width: 100%;
+        margin: 20px 0px;
+    } 
 
 }
