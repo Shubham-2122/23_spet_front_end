@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+    
+    <h2 id="h2"></h2>
+    
+    <!-- internal js -->
+
+
+    <!-- DOM  :- document Object model -->
+    <script>
+
+        // 1) Dom :- Console.log() :- debug ,error
+        console.log("hello javascript")
+        console.log(10+10)
+        console.log("sum =>",10-5)
+
+        // 2) dom document.write() , wirteln() body tag
+        document.write("hello shubham")
+        document.write("<br>hello js")
+        document.writeln("<h2>Hello This React</h2>")
+        document.writeln("sum =>",10+20)
+
+        // 3) method - getElementID 
+        console.log(document.getElementById("h1"))
+        
+        // only text value innertText 
+        document.getElementById("h1").innerText = "Hello innerText method"
+
+        // innerHTML :- tag and text both allow
+        console.log(document.getElementById("h2"))
+        document.getElementById("h2").innerHTML = "<i>Hello InnerHTML data</i>"
+
+    </script>
+
+
+
+</body>
+</html>
