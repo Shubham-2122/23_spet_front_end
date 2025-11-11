@@ -1,5 +1,10 @@
-console.log("Hello this External Js")
+// console.log("Hello this External Js");
+// console.log("Hello");
+// console.log("mul ->",10*7)
 
-console.log("Hello")
+// Bom :- borswer object model
 
-console.log("mul ->",10*7)
+// alert("pls filed first data")
+// confirm("Are your sure ?")
+// prompt("5 + 5 => ?")
+// print()
