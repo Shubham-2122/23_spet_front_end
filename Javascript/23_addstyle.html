@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .data{
+            padding: 40px;
+            background: linear-gradient(red,green,blue);
+            color: white;
+            font-size: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <button onclick="adddata()">Add css</button>
+    
+    <button onclick="removedata()">Remove</button>
+
+    <button onclick="view()">toggle</button>
+    
+    <h1 id="h1" >Hello this h1 data</h1>
+
+    <script>
+
+        let h1_tag = document.getElementById("h1")
+
+        function adddata(){
+            h1_tag.classList.add("data")
+        }
+
+        function removedata(){
+            h1_tag.classList.remove("data")
+        }
+
+        function view(){
+            h1_tag.classList.toggle("data")
+        }
+
+    </script>
+
+
+</body>
+</html>

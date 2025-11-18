@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1" onmouseenter="test()" onmouseleave="test2()">Hello this Mouse enter</h1>
+
+    <button onclick="test()">data change</button>
+
+    <script>
+
+        let h1_tag = document.getElementById("h1")
+
+        function test(){
+            h1_tag.innerHTML = "Hello enter data";
+            h1_tag.style.background = "blue"
+            h1_tag.style.color ="white"
+        }
+
+        function test2(){
+            h1_tag.innerHTML = "Hello leave data";
+            h1_tag.style.background = "red";
+        }
+
+    </script>
+</body>
+</html>
