@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+     <table>
+        <form action="">
+            <tr>
+                <td><input type="text" onblur="return vali(name1,nmerr)" placeholder="Enter your name" id="name1"></td>
+                <td><span id="nmerr"></span></td>
+            </tr>
+            <tr>
+                <td><input type="email" onblur="return vali(email,emerr)" placeholder="Enter your email" id="email"></td>
+                <td><span id="emerr"></span></td>
+            </tr>
+            <tr>
+                <td><input type="tel" onblur="return vali(phone,pherr)" placeholder="Enter your phone" id="phone"></td>
+                <td><span id="pherr"></span></td>
+            </tr>
+            <tr>
+                <td><input type="password" onblur="return vali(psw,pswerr)" placeholder="Enter your password" id="psw"></td>
+                <td><span id="pswerr"></span></td>
+            </tr>
+            <tr>
+                <td><input type="submit" ></td>
+            </tr>
+        </form>
+    </table>
+
+
+    <script>
+
+        function vali(inp,err){
+            if(inp.value == "" || inp.value == null){
+                err.innerHTML = "pls field Required.."
+                err.style.color = "red"
+                inp.style.border = "2px solid red"
+                return false
+            }
+            else{
+                  err.innerHTML = ""
+                  inp.style.border = "2px solid green"
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
