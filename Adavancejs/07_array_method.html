@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let arr = [1,2,3,4,5]
+        console.log(arr)
+        console.log(arr.length)
+
+        let arr1 = [6,7,8,9,10]
+        console.log(arr.concat(arr1))
+
+        // after add
+        arr.push(6)
+        console.log(arr)
+
+        // after remove
+        arr.pop()
+        console.log(arr)
+
+        // before add
+        arr.unshift(10)
+        console.log(arr)
+
+        // arr remove before
+        arr.shift()
+        console.log(arr)
+
+
+        console.log(arr.reverse())
+
+        const words = ["spray", "elite", "exuberant", "destruction", "present"];
+
+        const res = words.filter((data)=> data.length < 6)
+        console.log(res)
+
+        const elements = ["Fire", "Air", "Water"];
+
+        console.log(elements.join())
+        console.log(elements.join(""))
+         console.log(elements.join("-"))
+
+         const animals = ["ant", "bison", "camel", "duck", "elephant"];
+
+         console.log(animals.slice(2))
+         console.log(animals.slice(1,4))
+
+    </script>
+</body>
+</html>

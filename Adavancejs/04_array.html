@@ -26,13 +26,16 @@
         // }
 
         // 3) for in index and value
-        for(let id in arr){
-            // console.log(id)
-            console.log(arr[id])
-            document.writeln(arr[id],"<br>")
-        }
+        // for(let id in arr){
+        //     // console.log(id)
+        //     console.log(arr[id])
+        //     document.writeln(arr[id],"<br>")
+        // }
 
-        // 4) for each
+        // 4) for each 
+        arr.forEach((val,index)=>{
+            document.writeln(`<p>${index} : ${val}</p>`)
+        })
 
 
 
