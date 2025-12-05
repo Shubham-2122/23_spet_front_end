@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- class : colletion of member function and data member in class 
+        : it's blue print of object  -->
+
+    <!-- class Ab{
+        memeber function{
+            datamener
+        }
+        memeber function{
+            datamener
+        }
+    }    
+    const data = new Ab -->
+
+    <script>
+
+        class Bank{
+            // memeber function
+            x = function Details(pin,balnce){
+                // data memeber
+                let BankName = "HDFC"
+                let BankIFCE = "HD000271F"
+                let Atmpin = pin
+                let UBalnce = balnce
+                
+                console.log("Bank Name : ",BankName)
+                console.log("Bank code : ",BankIFCE)
+                console.log("Bank Pin : ",Atmpin)
+                console.log("Bank Balnce : ",UBalnce)
+            }
+            y = function Deposit(){
+                console.log("Deposit")
+            }
+        }
+
+        const user = new Bank;
+    
+        user.y()
+        user.x(123,5000)
+
+        const sujal = new Bank
+        console.log(sujal)
+        sujal.x(345,7000)
+        sujal.y()
+    </script>
+
+</body>
+</html>

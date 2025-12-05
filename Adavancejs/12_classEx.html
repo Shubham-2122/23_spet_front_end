@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class Arith {
+            // 1) store and wihout parameter
+            x = function sum(){
+                let x=30,y=20
+                console.log("sum : ",x+y)
+            }
+
+            // 2) store and wih parameter
+            y = function sub(a,b){
+                console.log("sub :",a-b)
+            }
+            // 3) without store and wihout parameter
+            mul(){
+                let x=30,y=20
+                console.log("mul : ",x*y)
+            }
+            // 1)  without store and wih parameter
+            divi(a,b){
+                console.log("divi : ",a/b)
+            }
+        }
+
+        // console.log(Arith)
+
+        const data = new Arith
+        console.log(data)
+
+        data.x()
+        data.mul()
+        data.divi(50,20)
+        data.y(90,30)
+
+    </script>
+</body>
+
+</html>

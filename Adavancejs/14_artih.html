@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        class Artih{
+            constructor(a,b){
+                this.a = a;
+                this.b = b
+            }
+            x = function sum(){
+                console.log(`sum : ${this.a + this.b}`)
+            }
+            sub(){
+                console.log(`sub : ${this.a - this.b}`)
+            }
+            mul(){
+                 console.log(`mul : ${this.a * this.b}`)
+            }
+        }
+        const data = new Artih(30,20);
+        console.log(data)
+        data.x()
+        data.mul()
+        data.sub()
+        
+
+    </script>
+</body>
+</html>
