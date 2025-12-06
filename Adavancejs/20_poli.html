@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- method overloading(complie) : class in one function name same but deffernt parameter overloading  -->
+    <!-- method oriding(run-time) : class deffeter fucntion same and orirding  -->
+
+    <script>
+
+        // class ab{
+        //     data(a){
+        //         console.log("A : ",a)
+        //     }
+        //     data(a,b){
+        //         console.log("sum : ",a+b)
+        //     }
+        //     data(a,b){
+        //         console.log("sub : ",a-b)
+        //     }
+        // }
+
+        // const user = new ab 
+        // console.log(user)
+        // user.data(20,10)
+
+        class A {
+            data(){
+                console.log("A class")
+            }
+        }
+        class B extends A{
+            data(){
+                console.log("B class")
+            }
+        }
+        class C extends B{
+            data(){
+                console.log("C class")
+            }
+        }
+
+        // const user = new C 
+        // console.log(user)
+        // user.data()
+        // user.data()
+
+        const user = [new A,new B,new C]
+        console.log(user)
+        user.forEach((data)=>{
+            data.data()
+        })
+
+    </script>
+</body>
+</html>

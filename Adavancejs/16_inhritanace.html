@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- inheritance : one prop to another proerty extend -->
+     <!-- 1) single level A - B
+     2) multilevel A -B - C 
+     3) multiple A - C,B - C : 
+     4) hriachical A - B,A - C
+     5) hybrid :  -->
+
+     <script>
+
+        class A{
+            x = function data(){
+                console.log("hello A Class data")
+            }
+        }
+
+        class B extends A{
+            y = function data1(){
+                console.log("hello B class Data")
+            }
+        }
+
+        const user = new B 
+        console.log(user)
+        user.x()
+        user.y()
+
+     </script>
+</body>
+</html>

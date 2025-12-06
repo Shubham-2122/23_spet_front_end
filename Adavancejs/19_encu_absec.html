@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- abscr : private
+        encu : private how to access 
+    -->
+
+    <script>
+
+        function Person(name,age){
+            // absce 
+            let _name = name
+            let _age = age;
+
+            // Encu
+            this.getName=()=>{
+                return _name
+            }
+            this.getAge =()=>{
+                return _age
+            }
+            this.setAge=(newage)=>{
+                return _age = newage
+            }
+        }
+
+        const user = new Person("het",25)
+
+        console.log(user)
+        console.log(user._name)
+        console.log(user._age)
+
+        console.log(user.getName())
+        console.log(user.getAge())
+        user.setAge(27)
+        console.log(user.getAge())
+
+
+
+    </script>
+</body>
+</html>
