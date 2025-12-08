@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- call : object call -->
+
+    <script>
+
+        let data = {
+            fulldata : function view(city,state){
+                console.log("firstname : ",this.firstname," lastname : ",this.lastname ," city : ",city," state : ",state)
+            }
+        }
+
+        let person = {
+            firstname : "Het",
+            lastname : "patel"
+        }
+
+        let person1={
+            firstname : "varj",
+            lastname : "mehta"
+        }
+
+        console.log(data)
+        // data.fulldata("surat","gujarat")
+        // call method user spreate/ single argument
+        data.fulldata.call(person,"surat","gujarat")
+
+        // apply 
+        data.fulldata.apply(person1,["rajkot","gujarat"])
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- rest ... as function store -->
+
+    <script>
+
+
+        function test(...total){
+            let sum = 0
+            for(let user in total){
+                sum = sum + total[user]
+            }
+            return sum
+        }
+
+        console.log(test(40,50,30,55,70))
+
+    </script>
+</body>
+</html>
