@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function test(res){
+            console.log(res)
+        }
+
+
+        let data = new Promise((success,reject)=>{
+            if(!success){
+                success("success data")
+            }
+            else{
+                reject("Error value")
+            }
+        })
+        .then((data)=>{
+            test(data)
+        })
+        .catch((res)=>{
+            test(res)
+        })
+        
+        // console.log(data)
+
+    </script>
+</body>
+</html>

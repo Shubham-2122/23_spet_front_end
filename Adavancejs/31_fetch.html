@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- fetch : inbuilt function in javascript/promise  -->
+    <!-- using back-end data read  -->
+    <!-- 
+    1) get :  data read 
+    2) post : new data created
+    3) delete : remove data
+    4) put/patch : update data -->
+    <!-- 
+    fetch("location",{
+        method : "GET"
+    })
+    .then(text file string)
+    .then(print data)
+    .catch() -->
+
+    <h1 id="h1"></h1>
+
+    <button onclick="data()">Data</button>
+
+    <script>
+
+        // console.log(fetch())
+
+        function data() {
+            fetch("data.txt", {
+                method: "GET"
+            })
+                .then((res) => {
+                    // text file javscript string
+                    // console.log(res.text())
+                    return res.text()
+                })
+                .then((data) => {
+                    console.log(data)
+                    // document.writeln(data)
+                    document.getElementById("h1").innerHTML = data
+                })
+                .catch((err)=>{
+                    console.log(err)
+                })
+        }
+
+    </script>
+
+</body>
+
+</html>

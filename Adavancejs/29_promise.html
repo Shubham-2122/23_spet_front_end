@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- promise : it's is a class 
+        resolve,reject    
+    3 state 
+        1)pending : hold pending state,data availbale
+        2)fullfield : Completed data
+        3)reject : error case 
+    -->
+    <!-- let data = new Promise(function(res,rej){
+
+    }) -->
+
+    <script>
+
+        let data = new Promise(function(res,err){
+            x = 10
+            if(x === 11){
+                // console.log("resolve value")
+                res("reslove value")
+            }
+            else{
+                // console.log("reject value")
+                err("reject value")
+            }
+        })
+
+        console.log(data)
+
+    </script>
+
+</body>
+</html>
