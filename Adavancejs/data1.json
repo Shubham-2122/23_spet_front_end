@@ -1,0 +1,41 @@
+{
+    "users":[
+    {
+        "id" : 1,
+        "name":"het",
+        "course":"Front-end"
+    },
+    {
+        "id" : 2,
+        "name":"varj",
+        "course":"back-end"
+    },
+    {
+        "id" : 3,
+        "name":"parth",
+        "course":"Full-stack"
+    },
+    {
+        "id" : 4,
+        "name":"priya",
+        "course":"Mern-stack"
+    }
+    ],
+    "admin":[
+        {
+            "id":1,
+            "name":"admin",
+            "age":21
+        },
+        {
+            "id":2,
+            "name":"subadmin",
+            "age":19
+        },
+        {
+            "id":3,
+            "name":"admin2",
+            "age":34
+        }
+    ]
+}

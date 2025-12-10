@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- json : javascript syntax object noation -->
+     <!-- light wight read,show -->
+    <!-- easy to read data -->
+    <!-- json direct not show javascript -->
+
+    <!-- let json = `[{
+        "id":1,
+        "nmae" : "user",
+        "course" : "front-end"
+    }]`
+
+    let arr = [{
+        id : 1,
+        name : "user",
+        course : "front-end"
+    }] -->
+
+
+    <script>
+
+        let jsondata = `[
+            {
+                "id":"1",
+                "name":"varj",
+                "course":"front-end"
+            },
+            {
+                "id":"2",
+                "name":"het",
+                "course":"back-end"
+            }
+        ]` 
+
+        console.log(jsondata)
+        // document.writeln(jsondata)
+
+        // parse : json to object
+        let obj = JSON.parse(jsondata)
+        console.log(obj)
+        for(let user of obj){
+            console.log(user)
+            document.writeln(`<h2>id : ${user.id} name : ${user.name} course : ${user.course}</h2>`)
+        }
+
+
+        let arr = [
+            {
+                id : 1,
+                name : "user",
+                course :"front-end"
+            },
+            {
+                id : 2,
+                name : "user2",
+                course :"back-end"
+            },
+            {
+                id : 3,
+                name : "user3",
+                course :"full-stack"
+            }
+        ]
+
+        console.log(arr)
+
+        let obj1 = JSON.stringify(arr)
+
+        console.log(obj1)
+
+    </script>
+
+</body>
+</html>

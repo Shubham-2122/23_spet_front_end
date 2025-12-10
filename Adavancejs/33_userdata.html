@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- fetch function -->
+
+    <script>
+
+        fetch("data.json",{
+            method:"GET"
+        })
+        .then((res)=>{
+            // console.log(res.json())
+            return res.json()
+        })
+        .then((data)=>{
+            console.log(data)
+            data.forEach((user,index) => {
+                console.log(user)
+                document.write(`<h2>id : ${user.id} name : ${user.name} course : ${user.course}</h2>`)
+            });
+        })
+        .catch((err)=>{
+            console.log(err)
+        })
+
+    </script>
+</body>
+</html>
