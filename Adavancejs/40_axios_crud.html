@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+</head>
+<body>
+    <script>
+        const getuser = async()=>{
+            const res = await axios.get("https://660d95e36ddfa2943b34c530.mockapi.io/users")
+            console.log(res.data)
+        }
+
+        // getuser()
+
+        let perosn = {
+            name:"shubham",
+            surname:"jadav",
+            email:"shubham@gmail.com",
+            city:"bharuch"
+        }
+
+        const newuser = async ()=>{
+            const res = await axios.post("https://660d95e36ddfa2943b34c530.mockapi.io/users",perosn)
+            console.log(res.data)
+        }
+        // newuser()
+
+        const deleteuser = async ()=>{
+            const res = await axios.delete("https://660d95e36ddfa2943b34c530.mockapi.io/users/7")
+            console.log(res.data)
+        }
+        // deleteuser()
+
+        let perosn1 ={
+            id:5,
+            name :"sujal",
+            email:"sujal@gmail.com"
+        }
+
+        const updateuser = async ()=>{
+            const res = await axios.put(`https://660d95e36ddfa2943b34c530.mockapi.io/users/${perosn1.id}`,perosn1)
+            console.log(res.data)
+        }
+        updateuser()
+    </script>
+</body>
+</html>

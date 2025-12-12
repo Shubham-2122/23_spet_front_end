@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function data(){
+            setTimeout(()=>{
+                console.log("hello")
+            },2000)
+        }
+
+        const newdata =async()=>{
+            console.log("1")
+            console.log("2")
+            const res = await data()
+            console.log("3")
+            console.log("4")
+        }
+
+        newdata()
+
+
+        
+
+    </script>
+</body>
+</html>
