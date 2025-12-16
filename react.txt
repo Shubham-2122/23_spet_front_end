@@ -1,0 +1,57 @@
+React : lib
+	-> single page
+	-> without reshresh page
+	-> compoenent 
+	-> routing 
+	-> v16.8 Function
+ 
+Vue
+Agul -> class
+	-> rsresh
+ 	-> compoenent
+next js
+
+
+React : Application create
+	-> vitrual dom 
+	-> single page 
+	-> js depend
+
+React install 
+1) node install
+	-> node -v
+	   24.11.10
+	-> npm : node package manager
+		
+ 	 	1) global lib
+		2) local lib 
+		3) 3rd party lib
+
+2) react application :
+	npm vs npx 
+	npx : node package external 	
+	
+	cmd : npx create-react-app app-name
+	cmd : cd app-name
+	cmd : npm start
+
+3) react stru : 
+	1) node module : npm install
+	2) public : index.html , static images
+	3) src : index.js ,App.js
+	4) package-lock.json , package.json
+
+html - > inde js-> app.js
+appjs -> index.js -> html
+
+3) react + vite : 
+	cmd : npm create vite@latest my-react-app 
+	cmd : cd my-react-app
+	cmd : npm run dev
+
+4) floder stru : 
+	1) node module : npm install
+	2) public :index.html
+	3) main.jsx and App.jsx
+	4) package.json : npm run dev
+
