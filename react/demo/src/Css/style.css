@@ -1,0 +1,7 @@
+#h3{
+    background: linear-gradient(red,green,blue);
+    color: white;
+    padding: 40px;
+    font-size: 50px;
+    text-align: center;
+}
