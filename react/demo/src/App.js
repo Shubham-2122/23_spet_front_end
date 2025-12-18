@@ -1,5 +1,6 @@
 import React from "react";
 import Data from "./Css/Data";
+import MainProps from "./Props/MainProps";
 // import Hello from "./Jsx/Hello";
 // import ClassCompo from "./componenet/ClassCompo";
 // import FunCompo from "./componenet/FunCompo";
@@ -15,7 +16,10 @@ function App() {
             {/* <Hello /> */}
 
             {/* css */}
-            <Data />
+            {/* <Data /> */}
+
+            {/* props */}
+            <MainProps />
         </div>
     )
 }
