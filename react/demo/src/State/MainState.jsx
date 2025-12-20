@@ -5,12 +5,16 @@
 
 import React from 'react'
 import ClassSate from './ClassSate'
+import FunState from './FunState'
+import FunObj from './FunObj'
 
 function MainState() {
   return (
     <div>
       <h1>hello this State componet</h1>
-      <ClassSate />
+      {/* <ClassSate /> */}
+      {/* <FunState /> */}
+      <FunObj />
     </div>
   )
 }
