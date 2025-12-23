@@ -4,6 +4,9 @@ import React from "react";
 import MainState from "./State/MainState";
 import FormData from "./formHadling/FormData";
 import FormObj from "./formHadling/FormObj";
+import EffectDta from "./Effect/EffectDta";
+import UserData from "./Effect/UserData";
+import UserAxi from "./Effect/UserAxi";
 // import Hello from "./Jsx/Hello";
 // import ClassCompo from "./componenet/ClassCompo";
 // import FunCompo from "./componenet/FunCompo";
@@ -29,7 +32,12 @@ function App() {
 
             {/* form data  */}
             {/* <FormData /> */}
-            <FormObj />
+            {/* <FormObj /> */}
+
+            {/* Effect */}
+            {/* <EffectDta /> */}
+            {/* <UserData /> */}
+            <UserAxi />
         </div>
     )
 }
