@@ -1,12 +1,14 @@
 import React from "react";
 // import Data from "./Css/Data";
 // import MainProps from "./Props/MainProps";
-import MainState from "./State/MainState";
-import FormData from "./formHadling/FormData";
-import FormObj from "./formHadling/FormObj";
-import EffectDta from "./Effect/EffectDta";
-import UserData from "./Effect/UserData";
-import UserAxi from "./Effect/UserAxi";
+// import MainState from "./State/MainState";
+// import FormData from "./formHadling/FormData";
+// import FormObj from "./formHadling/FormObj";
+// import EffectDta from "./Effect/EffectDta";
+// import UserData from "./Effect/UserData";
+// import UserAxi from "./Effect/UserAxi";
+import ProductData from "./Effect/ProductData";
+import MainContext from "./Context/MainContext";
 // import Hello from "./Jsx/Hello";
 // import ClassCompo from "./componenet/ClassCompo";
 // import FunCompo from "./componenet/FunCompo";
@@ -37,7 +39,12 @@ function App() {
             {/* Effect */}
             {/* <EffectDta /> */}
             {/* <UserData /> */}
-            <UserAxi />
+            {/* <UserAxi /> */}
+
+            {/* <ProductData /> */}
+
+
+            <MainContext />
         </div>
     )
 }
