@@ -9,6 +9,7 @@ import React from "react";
 // import UserAxi from "./Effect/UserAxi";
 import ProductData from "./Effect/ProductData";
 import MainContext from "./Context/MainContext";
+import BooK from "./Design/BooK";
 // import Hello from "./Jsx/Hello";
 // import ClassCompo from "./componenet/ClassCompo";
 // import FunCompo from "./componenet/FunCompo";
@@ -43,8 +44,12 @@ function App() {
 
             {/* <ProductData /> */}
 
+            {/* props context */}
+            {/* <MainContext /> */}
 
-            <MainContext />
+            {/* design */}
+            <BooK />
+
         </div>
     )
 }
