@@ -10,6 +10,9 @@ import React from "react";
 import ProductData from "./Effect/ProductData";
 import MainContext from "./Context/MainContext";
 import BooK from "./Design/BooK";
+import ReactBoot from "./Design/ReactBoot";
+import FooterMdb from "./Design/FooterMdb";
+import Login from "./Design/Login";
 // import Hello from "./Jsx/Hello";
 // import ClassCompo from "./componenet/ClassCompo";
 // import FunCompo from "./componenet/FunCompo";
@@ -48,7 +51,10 @@ function App() {
             {/* <MainContext /> */}
 
             {/* design */}
-            <BooK />
+            {/* <BooK /> */}
+            {/* <ReactBoot /> */}
+            <Login />
+            <FooterMdb />
 
         </div>
     )
