@@ -13,14 +13,18 @@ import BooK from "./Design/BooK";
 import ReactBoot from "./Design/ReactBoot";
 import FooterMdb from "./Design/FooterMdb";
 import Login from "./Design/Login";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./Layout/Pages/Home";
+import About from "./Layout/Pages/About";
+import Contact from "./Layout/Pages/Contact";
 // import Hello from "./Jsx/Hello";
 // import ClassCompo from "./componenet/ClassCompo";
 // import FunCompo from "./componenet/FunCompo";
 
 function App() {
     return (
+        <BrowserRouter>
         <div>
-            <h1>Hello this App data</h1>
             {/* <ClassCompo /> */}
             {/* <FunCompo /> */}
 
@@ -53,10 +57,18 @@ function App() {
             {/* design */}
             {/* <BooK /> */}
             {/* <ReactBoot /> */}
-            <Login />
-            <FooterMdb />
+            {/* <Login /> */}
+            {/* <FooterMdb /> */}
+
+            <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+            </Routes>
+            
 
         </div>
+        </BrowserRouter>
     )
 }
 export default App;
