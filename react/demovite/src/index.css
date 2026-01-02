@@ -1,1 +1,30 @@
 @import "tailwindcss";
+
+/* base : tag direct apply */
+@layer base{
+    h1{
+        font-size: 50px;
+        font-weight: bold;
+    }
+}
+
+/* compoennt class component custom */
+@layer components{
+    .card{
+        height: 300px;
+        width: 200px;
+        border: 2px solid;
+        transition: .7s;
+    }
+    .card:hover{
+        background: linear-gradient(red,green);
+        transform: translateX(10px);
+    }
+}
+
+@layer utilities{
+    /* font-family */
+    .padd{
+        padding: 50px;
+    }
+}

@@ -5,6 +5,7 @@ import Space from './Tailwind/Space'
 import Borders from './Tailwind/Borders'
 import Width from './Tailwind/Width'
 import Flex from './Tailwind/Flex'
+import Custom from './Tailwind/Custom'
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* <Space /> */}
       {/* <Borders /> */}
       {/* <Width /> */}
-      <Flex />
+      {/* <Flex /> */}
+      <Custom />
     </div>
   )
 }
