@@ -1,0 +1,53 @@
+import React, { useEffect } from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Home from './Website/Pages/Home';
+import About from './Website/Pages/About';
+import Depart from './Website/Pages/Depart';
+import Service from './Website/Pages/Service';
+import Doctors from './Website/Pages/Doctors';
+import DepartDetils from './Website/Pages/DepartDetils';
+import ServiceDta from './Website/Pages/ServiceDta';
+import Appoint from './Website/Pages/Appoint';
+import Contact from './Website/Pages/Contact';
+import NotFound from './Website/Pages/NotFound';
+
+function App() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,   // animation only once
+      offset: 100,
+      easing: "ease-in-out",
+    });
+
+    // refresh for dynamic content
+    AOS.refresh();
+  }, []);
+
+  return (
+    <BrowserRouter>
+      <div>
+        <Routes>
+          {/* website */}
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/dep' element={<Depart />} />
+          <Route path='/doct' element={<Doctors />} />
+          <Route path='/DepDat' element={<DepartDetils />} />
+          <Route path='/service' element={<Service />} />
+          <Route path='/servDat' element={<ServiceDta />} />
+          <Route path='/apoint' element={<Appoint />} />
+          <Route path='/Contact' element={<Contact />} />
+
+          <Route path='*' element={<NotFound />}/>
+
+        </Routes>
+      </div>
+    </BrowserRouter>
+  )
+}
+
+export default App

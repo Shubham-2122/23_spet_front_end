@@ -1,0 +1,39 @@
+{
+    "admin": [
+        {
+            "id": 1,
+            "name": "admin",
+            "email": "admin@gmail.com",
+            "password": "1234"
+        },
+        {
+            "id": 2,
+            "name": "subadmin",
+            "email": "subadmin@gmail.com",
+            "password": "123456"
+        }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "name": "user",
+            "email": "user@gmail.com",
+            "password": "1234",
+            "status": "unblock"
+        },
+        {
+            "id": 2,
+            "name": "user2",
+            "email": "user2@gmail.com",
+            "password": "123456",
+            "status": "block"
+        },
+        {
+            "id": 3,
+            "name": "user3",
+            "email": "user3@gmail.com",
+            "password": "123465",
+            "status": "unblock"
+        }
+    ]
+}
