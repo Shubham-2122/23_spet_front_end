@@ -35,5 +35,25 @@
             "password": "123465",
             "status": "unblock"
         }
+    ],
+    "services":[
+        {
+            "id":1,
+            "name":"Neurology",
+            "desc":"Expert neurological care for brain and nervous system disorders with state-of-the-art imaging technology.",
+            "img":"https://th.bing.com/th/id/OIP.SdTJejnfp1QVTIzV_SF5BQHaE8?w=235&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+            "id":2,
+            "name":"Orthopedics",
+            "desc":"Specialized bone and joint treatment including sports medicine and reconstructive surgery procedures.",
+            "img":"https://th.bing.com/th/id/OIP.2gVieE8EmOjAhZRdeFolHAAAAA?w=230&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        },
+        {
+             "id":3,
+            "name":"Emergency Care",
+            "desc":"24/7 emergency medical services with rapid response teams and critical care capabilities.",
+            "img":"https://th.bing.com/th/id/OIP.IqmC0jJ2cbtvVoOcTMHyqAHaE8?w=299&h=200&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+        }
     ]
 }

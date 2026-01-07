@@ -12,6 +12,8 @@ import ServiceDta from './Website/Pages/ServiceDta';
 import Appoint from './Website/Pages/Appoint';
 import Contact from './Website/Pages/Contact';
 import NotFound from './Website/Pages/NotFound';
+import Dashboard from './Admin/Apages/Dashboard';
+import ServiceMange from './Admin/Apages/ServiceMange';
 
 function App() {
 
@@ -43,6 +45,10 @@ function App() {
           <Route path='/Contact' element={<Contact />} />
 
           <Route path='*' element={<NotFound />}/>
+
+          {/* admin */}
+          <Route path='/dash' element={<Dashboard />} />
+          <Route path='/servicemange' element={<ServiceMange />} />
 
         </Routes>
       </div>
