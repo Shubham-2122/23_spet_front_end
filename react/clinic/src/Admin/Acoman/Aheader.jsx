@@ -29,7 +29,12 @@ function Aheader() {
                         <nav id="navmenu" className="navmenu">
                             <ul>
                                 <li><NavLink to="/dash" href="index.html">Dasboard</NavLink></li>
-                                <li><NavLink to="/servicemange" >Services</NavLink></li>
+                                 <li className="dropdown"><a href="#"><span>Services</span> <i className="bi bi-chevron-down toggle-dropdown" /></a>
+                                    <ul>
+                                        <li><NavLink to="/servicemange" >Service Manage</NavLink></li>
+                                        <li><NavLink to="/serviceadd" >Service Add</NavLink></li>
+                                    </ul>
+                                </li>
                                 <li><NavLink to="/dep" >Departments</NavLink></li>
                                 <li><NavLink to="/doct" >Doctors</NavLink></li>
                                 <li className="dropdown"><a href="#"><span>More Pages</span> <i className="bi bi-chevron-down toggle-dropdown" /></a>

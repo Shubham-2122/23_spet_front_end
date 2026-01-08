@@ -1,59 +1,71 @@
 {
-    "admin": [
-        {
-            "id": 1,
-            "name": "admin",
-            "email": "admin@gmail.com",
-            "password": "1234"
-        },
-        {
-            "id": 2,
-            "name": "subadmin",
-            "email": "subadmin@gmail.com",
-            "password": "123456"
-        }
-    ],
-    "users": [
-        {
-            "id": 1,
-            "name": "user",
-            "email": "user@gmail.com",
-            "password": "1234",
-            "status": "unblock"
-        },
-        {
-            "id": 2,
-            "name": "user2",
-            "email": "user2@gmail.com",
-            "password": "123456",
-            "status": "block"
-        },
-        {
-            "id": 3,
-            "name": "user3",
-            "email": "user3@gmail.com",
-            "password": "123465",
-            "status": "unblock"
-        }
-    ],
-    "services":[
-        {
-            "id":1,
-            "name":"Neurology",
-            "desc":"Expert neurological care for brain and nervous system disorders with state-of-the-art imaging technology.",
-            "img":"https://th.bing.com/th/id/OIP.SdTJejnfp1QVTIzV_SF5BQHaE8?w=235&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-        },
-        {
-            "id":2,
-            "name":"Orthopedics",
-            "desc":"Specialized bone and joint treatment including sports medicine and reconstructive surgery procedures.",
-            "img":"https://th.bing.com/th/id/OIP.2gVieE8EmOjAhZRdeFolHAAAAA?w=230&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-        },
-        {
-             "id":3,
-            "name":"Emergency Care",
-            "desc":"24/7 emergency medical services with rapid response teams and critical care capabilities.",
-            "img":"https://th.bing.com/th/id/OIP.IqmC0jJ2cbtvVoOcTMHyqAHaE8?w=299&h=200&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-        }
-    ]
+  "admin": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "2",
+      "name": "subadmin",
+      "email": "subadmin@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "user",
+      "email": "user@gmail.com",
+      "password": "1234",
+      "status": "unblock"
+    },
+    {
+      "id": "2",
+      "name": "user2",
+      "email": "user2@gmail.com",
+      "password": "123456",
+      "status": "block"
+    },
+    {
+      "id": "3",
+      "name": "user3",
+      "email": "user3@gmail.com",
+      "password": "123465",
+      "status": "unblock"
+    }
+  ],
+  "services": [
+    {
+      "id": "1",
+      "name": "Neurology",
+      "desc": "Expert neurological care for brain and nervous system disorders with state-of-the-art imaging technology.",
+      "img": "https://th.bing.com/th/id/OIP.SdTJejnfp1QVTIzV_SF5BQHaE8?w=235&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": "2",
+      "name": "Orthopedics",
+      "desc": "Specialized bone and joint treatment including sports medicine and reconstructive surgery procedures.",
+      "img": "https://th.bing.com/th/id/OIP.2gVieE8EmOjAhZRdeFolHAAAAA?w=230&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": "3",
+      "name": "Emergency Care",
+      "desc": "24/7 emergency medical services with rapid response teams and critical care capabilities.",
+      "img": "https://th.bing.com/th/id/OIP.IqmC0jJ2cbtvVoOcTMHyqAHaE8?w=299&h=200&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": "1767846931682",
+      "name": "cardiology",
+      "desc": "cardiology data for the hospital",
+      "img": "https://th.bing.com/th/id/OIP.pqSjo0rmXpNrn3ZVGUdoLAHaEG?w=309&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": "1767847064886",
+      "name": "dermatology",
+      "desc": "Hello this data for th snbajd",
+      "img": "https://th.bing.com/th/id/OIP.3JEwiK3tYqXL9VWexsQGBQHaE7?w=258&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    }
+  ]
 }
