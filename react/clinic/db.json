@@ -45,21 +45,51 @@
     },
     {
       "id": "2",
-      "name": "Orthopedics",
-      "desc": "Specialized bone and joint treatment including sports medicine and reconstructive surgery procedures.",
+      "name": "orthopedics",
+      "desc": "Specialized bone and joint treatment including sports medicine and reconstructive surgery procedures. Hello",
       "img": "https://th.bing.com/th/id/OIP.2gVieE8EmOjAhZRdeFolHAAAAA?w=230&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
     },
     {
       "id": "3",
-      "name": "Emergency Care",
+      "name": "pediatrics",
       "desc": "24/7 emergency medical services with rapid response teams and critical care capabilities.",
       "img": "https://th.bing.com/th/id/OIP.IqmC0jJ2cbtvVoOcTMHyqAHaE8?w=299&h=200&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
     },
     {
       "id": "1767846931682",
-      "name": "cardiology",
+      "name": "oncology",
       "desc": "cardiology data for the hospital",
       "img": "https://th.bing.com/th/id/OIP.pqSjo0rmXpNrn3ZVGUdoLAHaEG?w=309&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    }
+  ],
+  "doctors": [
+    {
+      "id": "1",
+      "name": "Dr. Sarah Williams",
+      "type": "Neurologist",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "url": "https://th.bing.com/th/id/OIP.T1u6Gr1XJVQYQ6sjfQMlcgHaHa?w=168&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": "2",
+      "name": "Dr. Michael Chen",
+      "type": "Orthopedic Surgeon",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "url": "https://th.bing.com/th/id/OIP.CVUZymgwssKGwrgtjs9H2QHaLH?w=115&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": "3",
+      "name": "Dr. Marcus Johnson",
+      "type": "Cardiologist",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "url": "https://th.bing.com/th/id/OIP.KEGIlW1fHTrH441altkTTAHaE8?w=252&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": "1768193075317",
+      "name": "Dr. Emily Rodriguez",
+      "url": "https://th.bing.com/th/id/OIP.1S6CXQysQl4iUgyNm4JrzgHaHa?w=143&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3",
+      "type": "pediatrics",
+      "desc": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
     }
   ]
 }

@@ -17,11 +17,11 @@ function ServiceMange() {
         setservice(res.data)
     }
 
-    const [singledata,setsingledata] = useState({
-        id:"",
-        name:"",
-        img:"",
-        desc:""
+    const [singledata, setsingledata] = useState({
+        id: "",
+        name: "",
+        img: "",
+        desc: ""
     })
 
     // single service
@@ -32,11 +32,48 @@ function ServiceMange() {
     }
 
     // delete service
-    const deleteservice =async(id)=>{
+    const deleteservice = async (id) => {
         const res = await axios.delete(`http://localhost:3000/services/${id}`)
         console.log(res.data)
         fetchdata()
     }
+
+    // modele open 
+    const [edit, setedit] = useState(null)
+    const [edited, seedited] = useState({
+        id: "",
+        name: "",
+        desc: "",
+        img: ""
+    })
+
+    const openModel = (data) => {
+        // console.log(data)
+        setedit(data)
+        seedited(data)
+    }
+    // form handling 
+    const gectchnage = (e)=>{
+        seedited({
+            ...edited,
+            [e.target.name] : e.target.value
+        })
+    }
+
+    const updateData=async(e)=>{
+           e.preventDefault()
+
+           try {
+            const res = await axios.put(`http://localhost:3000/services/${edited.id}`,edited)
+            console.log(res.data)
+            fetchdata()
+            setedit(null)
+           } catch (error) {
+            console.log("Api data not Found...",error)
+           }
+    }
+
+
 
     return (
         <div>
@@ -67,8 +104,8 @@ function ServiceMange() {
                                         </td>
                                         <td>
                                             <button className='btn btn-info' data-bs-toggle="modal" data-bs-target="#exampleModal" onClick={() => singleService(data.id)}>View</button>
-                                            <button className='btn btn-success mx-2'>Edit</button>
-                                            <button className='btn btn-danger' onClick={()=>deleteservice(data.id)}>Delete</button>
+                                            <button className='btn btn-success mx-2' onClick={() => openModel(data)}>Edit</button>
+                                            <button className='btn btn-danger' onClick={() => deleteservice(data.id)}>Delete</button>
                                         </td>
                                     </tr>
                                 )
@@ -76,6 +113,41 @@ function ServiceMange() {
                         }
                     </tbody>
                 </table>
+                {
+                    edit && (
+                        <div className="container my-5">
+                            <h1>Update Service data</h1>
+                            <form method="post" className="php-email-form">
+                                <div className="row gy-4">
+                                    <div className="col-12">
+                                        <select name="name" value={edited.name} onChange={gectchnage} className="form-select" required>
+                                            <option value hidden>Select Service</option>
+                                            <option value="general">General Consultation</option>
+                                            <option value="cardiology">Cardiology</option>
+                                            <option value="neurology">Neurology</option>
+                                            <option value="orthopedics">Orthopedics</option>
+                                            <option value="pediatrics">Pediatrics</option>
+                                            <option value="dermatology">Dermatology</option>
+                                            <option value="oncology">Oncology</option>
+                                        </select>
+                                    </div>
+                                    <div className="col-12">
+                                        <input type="url" name="img" value={edited.img} onChange={gectchnage} className="form-control" placeholder="Full image" required />
+                                    </div>
+
+                                    <div className="col-12">
+                                        <textarea name="desc" value={edited.desc} onChange={gectchnage} className="form-control" rows={4} placeholder="descrition" defaultValue={""} />
+                                    </div>
+                                    <div className="col-12">
+                                        <button type="submit" onClick={updateData} className="btn btn-success">Service Update</button>
+                                         <button type="submit" onClick={()=>setedit(null)} className="btn btn-info mx-2">Service Cancle</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    )
+                }
+
                 <div className="modal fade" id="exampleModal" tabIndex={-1} aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div className="modal-dialog">
                         <div className="modal-content">
@@ -84,7 +156,7 @@ function ServiceMange() {
                                 <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
                             </div>
                             <div className="modal-body">
-                                <div  className="col-12" >
+                                <div className="col-12" >
                                     <div className="service-item">
                                         <div className="service-image">
                                             <img src={singledata.img} alt="Cardiology Services" className="img-fluid" />
@@ -93,7 +165,7 @@ function ServiceMange() {
                                             </div>
                                         </div>
                                         <div className="service-content">
-                                      
+
                                             <h3>{singledata.name}</h3>
                                             <p>{singledata.desc}</p>
                                             <div className="service-features">

@@ -35,8 +35,12 @@ function Aheader() {
                                         <li><NavLink to="/serviceadd" >Service Add</NavLink></li>
                                     </ul>
                                 </li>
-                                <li><NavLink to="/dep" >Departments</NavLink></li>
-                                <li><NavLink to="/doct" >Doctors</NavLink></li>
+                                 <li className="dropdown"><a href="#"><span>Doctors</span> <i className="bi bi-chevron-down toggle-dropdown" /></a>
+                                    <ul>
+                                        <li><NavLink to="/doctorsmanage" >Doctors Manage</NavLink></li>
+                                        <li><NavLink to="/doctoradd" >Doctors Add</NavLink></li>
+                                    </ul>
+                                </li>
                                 <li className="dropdown"><a href="#"><span>More Pages</span> <i className="bi bi-chevron-down toggle-dropdown" /></a>
                                     <ul>
                                         <li><NavLink to="/DepDat" >Department Details</NavLink></li>

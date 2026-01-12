@@ -15,6 +15,8 @@ import NotFound from './Website/Pages/NotFound';
 import Dashboard from './Admin/Apages/Dashboard';
 import ServiceMange from './Admin/Apages/ServiceMange';
 import ServiceAdd from './Admin/Apages/ServiceAdd';
+import DoctorsMnage from './Admin/Apages/DoctorsMnage';
+import DoctorsAdd from './Admin/Apages/DoctorsAdd';
 
 function App() {
 
@@ -51,6 +53,8 @@ function App() {
           <Route path='/dash' element={<Dashboard />} />
           <Route path='/servicemange' element={<ServiceMange />} />
           <Route path='/serviceadd' element={<ServiceAdd />} />
+          <Route path='/doctorsmanage' element={<DoctorsMnage />} />
+          <Route path='/doctoradd' element={<DoctorsAdd />} />
 
         </Routes>
       </div>
