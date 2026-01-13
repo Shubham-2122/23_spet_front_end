@@ -17,6 +17,7 @@ import ServiceMange from './Admin/Apages/ServiceMange';
 import ServiceAdd from './Admin/Apages/ServiceAdd';
 import DoctorsMnage from './Admin/Apages/DoctorsMnage';
 import DoctorsAdd from './Admin/Apages/DoctorsAdd';
+import Alogin from './Admin/Apages/Alogin';
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
           <Route path='/serviceadd' element={<ServiceAdd />} />
           <Route path='/doctorsmanage' element={<DoctorsMnage />} />
           <Route path='/doctoradd' element={<DoctorsAdd />} />
+          <Route path='/alogin' element={<Alogin />} />
 
         </Routes>
       </div>
