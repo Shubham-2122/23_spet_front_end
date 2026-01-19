@@ -1,7 +1,24 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 function Aheader() {
+
+    const redirect = useNavigate()
+
+    useEffect(()=>{
+        if(!localStorage.getItem("Aid")){
+            redirect("/alogin")
+        }
+    })
+
+    const Alogout = ()=>{
+        localStorage.removeItem("Aid")
+        localStorage.removeItem("Aname")
+        redirect("/alogin")
+        toast.success("Logout successfully..")
+    }
+
   return (
     <div>
           <header id="header" className="header fixed-top">
@@ -50,7 +67,33 @@ function Aheader() {
                                     </ul>
                                 </li>
                               
-                                <li><NavLink to="/Contact" >Contact</NavLink></li>
+                                <li>
+                                    {
+                                        (()=>{
+                                            if(localStorage.getItem("Aid")){
+                                                return(
+                                                    <Link>hello {localStorage.getItem("Aname")}</Link>
+                                                )
+                                            }
+                                        })()
+                                    }
+                                </li>
+                                <li>
+                                    {
+                                        (()=>{
+                                            if(localStorage.getItem("Aid")){
+                                                return(
+                                                    <Link onClick={Alogout}>Logout</Link>
+                                                )
+                                            }
+                                            else{
+                                                return(
+                                                    <Link to="/alogin">Login</Link>
+                                                )
+                                            }
+                                        })()
+                                    }
+                                </li>
                             </ul>
                             <i className="mobile-nav-toggle d-xl-none bi bi-list" />
                         </nav>

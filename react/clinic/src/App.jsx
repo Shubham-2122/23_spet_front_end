@@ -18,6 +18,8 @@ import ServiceAdd from './Admin/Apages/ServiceAdd';
 import DoctorsMnage from './Admin/Apages/DoctorsMnage';
 import DoctorsAdd from './Admin/Apages/DoctorsAdd';
 import Alogin from './Admin/Apages/Alogin';
+import { ToastContainer, toast } from 'react-toastify';
+import Login from './Website/Pages/Login';
 
 function App() {
 
@@ -36,7 +38,9 @@ function App() {
   return (
     <BrowserRouter>
       <div>
+      <ToastContainer />
         <Routes>
+          
           {/* website */}
           <Route path='/' element={<Home />} />
           <Route path='/about' element={<About />} />
@@ -47,6 +51,7 @@ function App() {
           <Route path='/servDat' element={<ServiceDta />} />
           <Route path='/apoint' element={<Appoint />} />
           <Route path='/Contact' element={<Contact />} />
+           <Route path='/login' element={<Login />} />
 
           <Route path='*' element={<NotFound />}/>
 
