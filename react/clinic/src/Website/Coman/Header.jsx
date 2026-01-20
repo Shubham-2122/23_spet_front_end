@@ -101,7 +101,7 @@ function Header() {
                     (()=>{
                       if(localStorage.getItem("Uid")){
                         return(
-                          <Link>hello {localStorage.getItem("Uname")}</Link>
+                          <Link to="/editdata">hello {localStorage.getItem("Uname")}</Link>
                         )
                       }
                     })()

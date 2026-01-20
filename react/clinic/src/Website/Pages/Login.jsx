@@ -13,7 +13,7 @@ import {
 from 'mdb-react-ui-kit';
 import { toast } from 'react-toastify';
 import axios from 'axios';
-import { redirect, useNavigate } from 'react-router-dom';
+import { Link, redirect, useNavigate } from 'react-router-dom';
 
 function Login() {
 
@@ -64,6 +64,11 @@ function Login() {
                 return false
             }
 
+            if(users.status == "block"){
+              toast.error("account has been block")
+              return false
+            }
+
             toast.success("login successfully")
             localStorage.setItem("Uid",users.id)
             localStorage.setItem("Uname",users.name)
@@ -100,9 +105,9 @@ function Login() {
               <div className='mt-3'>
                     <p className="mb-0">
                       Don't have an account?{" "}
-                      <a href="#!" class="text- fw-bold">
+                      <Link to="/newdata" class="text- fw-bold">
                         Sign Up
-                      </a>
+                      </Link>
                     </p>
                   </div>
            
