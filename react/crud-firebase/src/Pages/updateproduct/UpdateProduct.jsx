@@ -11,6 +11,13 @@ function UpdateProduct() {
 
    const {products ,setProducts ,editProducts } = context;
 
+   const getchage=(e)=>{
+    setProducts({
+        ...products,
+        [e.target.name]:e.target.value
+    })
+   }
+
   return (
     <div>
         <div>

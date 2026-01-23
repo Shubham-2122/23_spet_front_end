@@ -21,6 +21,15 @@ function Header() {
                             <li className="nav-item">
                                 <NavLink className="nav-link" to="/contact">Contact</NavLink>
                             </li>
+                              <li className="nav-item">
+                                <NavLink className="nav-link" to="/life">Lifecycle</NavLink>
+                            </li>
+                               <li className="nav-item">
+                                <NavLink className="nav-link" to="/ref">Ref</NavLink>
+                            </li>
+                               <li className="nav-item">
+                                <NavLink className="nav-link" to="/usdata">reducer</NavLink>
+                            </li>
                             
                         </ul>
                         <form className="d-flex" role="search">

@@ -20,6 +20,9 @@ import Contact from "./Layout/Pages/Contact";
 import About1 from "./Layout/Pages/About1";
 import About2 from "./Layout/Pages/About2";
 import Not from "./Layout/Pages/Not";
+import LifeCycle from "./Hooks/LifeCycle";
+import UseRefda from "./Hooks/UseRefda";
+import Reducerda from "./Hooks/Reducerda";
 // import Hello from "./Jsx/Hello";
 // import ClassCompo from "./componenet/ClassCompo";
 // import FunCompo from "./componenet/FunCompo";
@@ -71,6 +74,9 @@ function App() {
                     <Route path="about2" element={<About2 />} />
                 </Route>
                 <Route path="/contact" element={<Contact />} />
+                <Route path="/life" element={<LifeCycle />} />
+                <Route path="/ref" element={<UseRefda />} />
+                <Route path="/usdata" element={<Reducerda />} />
 
                 {/* not Found  */}
                 <Route path="*" element={<Not />} />
