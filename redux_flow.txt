@@ -1,0 +1,35 @@
+Redux : global state Management
+      : Js Lib
+
+React+redux 
+1 store
+
+agul+redux
+mutileple store
+
+vue+ redux
+multiple store
+
+Redux flow Example
+
+1) store
+2) action 
+3) reducer
+ 
+Shop : Store : State,reducer
+Shopkeeper : reducer : logic,
+User : action : book : buy,add,delete
+
+Redux + react   => newRedux+react : rtk
+Store		   1)Store : state
+Reducer		   2)Slice : action + reducer
+action
+
+1) useContext -> useSelector : state allow access
+2) useReducer -> useDispatch : Function access , logic
+
+
+
+
+
+
