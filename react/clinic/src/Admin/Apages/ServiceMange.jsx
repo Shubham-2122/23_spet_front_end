@@ -51,6 +51,7 @@ function ServiceMange() {
     setedit(data);
     seedited(data);
   };
+
   // form handling
   const gectchnage = (e) => {
     seedited({
@@ -94,7 +95,7 @@ function ServiceMange() {
           <tbody>
             {service &&
               service.map((data, index) => {
-                // console.log(data)
+             
                 return (
                   <tr className="text-center" key={index}>
                     <th scope="row">{data.id}</th>

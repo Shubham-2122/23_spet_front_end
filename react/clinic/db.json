@@ -57,16 +57,16 @@
       "img": "https://th.bing.com/th/id/OIP.2gVieE8EmOjAhZRdeFolHAAAAA?w=230&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
     },
     {
-      "id": "3",
-      "name": "pediatrics",
-      "desc": "24/7 emergency medical services with rapid response teams and critical care capabilities.",
-      "img": "https://th.bing.com/th/id/OIP.IqmC0jJ2cbtvVoOcTMHyqAHaE8?w=299&h=200&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
-    },
-    {
       "id": "1767846931682",
       "name": "oncology",
       "desc": "cardiology data for the hospital",
       "img": "https://th.bing.com/th/id/OIP.pqSjo0rmXpNrn3ZVGUdoLAHaEG?w=309&h=180&c=7&r=0&o=7&dpr=1.5&pid=1.7&rm=3"
+    },
+    {
+      "id": "1770021589606",
+      "name": "orthopedics",
+      "desc": "sdfasdretaszwe45r5tjnthaw34g5w sadsad 4e",
+      "img": "https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?_gl=1*142nwcb*_ga*OTgxMzcxNzg3LjE3NTE4ODEzNTk.*_ga_8JE65Q40S6*czE3NjU4Nzk4OTAkbzQ0JGcxJHQxNzY1ODc5ODk0JGo1NiRsMCRoMA.."
     }
   ],
   "doctors": [
