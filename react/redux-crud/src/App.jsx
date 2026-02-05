@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import UserData from './Component/UserData'
 import NewUserData from './Component/NewUserData'
 import Navbar from './Component/Navbar'
+import EditUser from './Component/EditUser'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path='/' element={<UserData />} />
         <Route path='/new' element={<NewUserData />} />
+        <Route path='/edit/:id' element={<EditUser />} />
       </Routes>
     </div>
     </BrowserRouter>

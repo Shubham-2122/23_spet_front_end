@@ -3,7 +3,7 @@ import axios from "axios";
 
 // All data read
 export const readData = createAsyncThunk(
-    'readData',async(data,{rejectWithValue})=>{
+    'readData', async (data, { rejectWithValue }) => {
         try {
             const res = await axios.get("http://localhost:3000/users")
             const result = await res.data
@@ -16,9 +16,9 @@ export const readData = createAsyncThunk(
 )
 // new Product
 export const newData = createAsyncThunk(
-    'newData',async(data,{rejectWithValue})=>{
+    'newData', async (data, { rejectWithValue }) => {
         try {
-            const res = await axios.post("http://localhost:3000/users",data)
+            const res = await axios.post("http://localhost:3000/users", data)
             const result = await res.data
             return result;
         } catch (error) {
@@ -28,7 +28,7 @@ export const newData = createAsyncThunk(
 )
 // deletedata
 export const deleteData = createAsyncThunk(
-    'deleteData',async(id,{rejectWithValue})=>{
+    'deleteData', async (id, { rejectWithValue }) => {
         try {
             await axios.delete(`http://localhost:3000/users/${id}`)
             return id
@@ -38,73 +38,102 @@ export const deleteData = createAsyncThunk(
     }
 )
 
+export const editData = createAsyncThunk(
+    'editData', async (data, { rejectWithValue }) => {
+        try {
+            const res = await axios.put(`http://localhost:3000/users/${data.id}`, data)
+            const result = await res.data
+            return result;
+        } catch (error) {
+            return rejectWithValue(error)
+        }
+    }
+)
 
 export const userSlice = createSlice({
-    name:"userDetails",
-    initialState:{
-        loading : true,
-        users : [],
-        error : ""
+    name: "userDetails",
+    initialState: {
+        loading: true,
+        users: [],
+        error: ""
     },
-    reducers:{
-        userPending:(state,action)=>{
+    reducers: {
+        userPending: (state, action) => {
             state.loading = true
         },
-        userFullfiled:(state,action)=>{
+        userFullfiled: (state, action) => {
             state.loading = false;
             state.users.push(action.payload)
         },
-        userRejeted:(state,action)=>{
+        userRejeted: (state, action) => {
             state.loading = false
             state.error = action.payload
         }
     },
-    extraReducers:(builder)=>{
+    extraReducers: (builder) => {
         builder
-        .addCase(readData.pending,(state,action)=>{
-            state.loading = true;
-        })
-        .addCase(readData.fulfilled,(state,action)=>{
-            state.loading = false;
-            state.users = action.payload
-        })
-        .addCase(readData.rejected,(state,action)=>{
-            state.loading = false
-            state.error = action.payload
-        })
+            .addCase(readData.pending, (state, action) => {
+                state.loading = true;
+            })
+            .addCase(readData.fulfilled, (state, action) => {
+                state.loading = false;
+                state.users = action.payload
+            })
+            .addCase(readData.rejected, (state, action) => {
+                state.loading = false
+                state.error = action.payload
+            })
 
-        // new data
-        .addCase(newData.pending,(state,action)=>{
-            state.loading = true;
-        })
-        .addCase(newData.fulfilled,(state,action)=>{
-            state.loading = false;
-            state.users.push(action.payload)
-        })
-        .addCase(newData.rejected,(state,action)=>{
-            state.loading = false
-            state.error = action.payload
-        })
+            // new data
+            .addCase(newData.pending, (state, action) => {
+                state.loading = true;
+            })
+            .addCase(newData.fulfilled, (state, action) => {
+                state.loading = false;
+                state.users.push(action.payload)
+            })
+            .addCase(newData.rejected, (state, action) => {
+                state.loading = false
+                state.error = action.payload
+            })
 
-        // deletedata
-         .addCase(deleteData.pending,(state,action)=>{
-            state.loading = true;
-        })
-        .addCase(deleteData.fulfilled,(state,action)=>{
-            state.loading = false;
-            
-            state.users = state.users.filter(
-                (user)=> user.id != action.payload
-            )
-        })
-        .addCase(deleteData.rejected,(state,action)=>{
-            state.loading = false
-            state.error = action.payload
-        })
-        
+            // deletedata
+            .addCase(deleteData.pending, (state, action) => {
+                state.loading = true;
+            })
+            .addCase(deleteData.fulfilled, (state, action) => {
+                state.loading = false;
+
+                state.users = state.users.filter(
+                    (user) => user.id != action.payload
+                )
+            })
+            .addCase(deleteData.rejected, (state, action) => {
+                state.loading = false
+                state.error = action.payload
+            })
+
+            // editData
+
+            .addCase(editData.pending, (state, action) => {
+                state.loading = true;
+            })
+            .addCase(editData.fulfilled, (state, action) => {
+                state.loading = false;
+
+                state.users = state.users.map((data)=>{
+                    data.id === action.payload.id ? action.payload : data
+                })
+
+            })
+            .addCase(editData.rejected, (state, action) => {
+                state.loading = false
+                state.error = action.payload
+            })
+
     }
 })
 
-export const {userPending,userRejeted,userFullfiled} = userSlice.actions;
+export const { userPending, userRejeted, userFullfiled } = userSlice.actions;
 
 export default userSlice.reducer;

@@ -20,9 +20,15 @@
     },
     {
       "id": "1770179217973",
-      "name": "hetshi",
+      "name": "hetshi1",
       "email": "hetshi@gmail.com",
       "password": "1234"
+    },
+    {
+      "id": "1770266087886",
+      "name": "himani1",
+      "email": "himani@gmail.com",
+      "password": "himani123"
     }
   ],
   "admin": [
