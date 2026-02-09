@@ -1,0 +1,6 @@
+@use 'base';
+
+.h1{
+    background-color: base.$background;
+    color:  base.$color;
+}

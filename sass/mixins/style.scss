@@ -1,0 +1,49 @@
+// mixins : without para and with parameter
+@mixin border(){
+    border: 5px solid blue;
+}
+
+@mixin border2($size,$color){
+    border: $size solid $color;
+}
+
+
+@mixin flex($data){
+    display: flex;
+    justify-content:$data;
+    align-items: center;
+}
+
+h1{
+    @include border();
+}
+h2{
+    @include border();
+    text-align: center;
+}
+#h1{
+    @include border2(10px,red)
+}
+h3{
+    @include border2(7px,green)
+}
+
+
+.main{
+    height: 400px;
+    background-color: lightcoral;
+    @include flex(space-between);
+    .box{
+        height: 200px;
+        width: 200px;
+        @include border();
+        &:hover{
+            background-color: aqua;
+        }
+    }
+    @media only screen and (max-width:768px) {
+        display: block;
+        height: auto;
+    }
+}
+

@@ -1,0 +1,38 @@
+h1 {
+  border: 5px solid blue;
+}
+
+h2 {
+  border: 5px solid blue;
+  text-align: center;
+}
+
+#h1 {
+  border: 10px solid red;
+}
+
+h3 {
+  border: 7px solid green;
+}
+
+.main {
+  height: 400px;
+  background-color: lightcoral;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main .box {
+  height: 200px;
+  width: 200px;
+  border: 5px solid blue;
+}
+.main .box:hover {
+  background-color: aqua;
+}
+@media only screen and (max-width: 768px) {
+  .main {
+    display: block;
+    height: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

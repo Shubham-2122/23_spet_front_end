@@ -1,10 +1,11 @@
 #h1 {
   background-color: red;
   color: blue;
+  padding: 25px;
 }
 
 h2 {
   background-color: blue;
   color: red;
-  font-size: 50px;
+  font-size: 80px;
 }/*# sourceMappingURL=style.css.map */

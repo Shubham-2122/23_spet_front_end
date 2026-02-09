@@ -4,14 +4,17 @@ $bg-color : red;
 $color : blue;
 $size : 50px;
 
+// oparators : +,-,/,*
 
 #h1{
     background-color: $bg-color;
     color: $color;
+    // padding: $size - 25;
+    padding: $size / 2;
 }
 
 h2{
     background-color: $color;
     color: $bg-color;
-    font-size: $size;
+    font-size: $size + 30px;
 }

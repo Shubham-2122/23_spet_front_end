@@ -1,0 +1,13 @@
+%bordered{
+    border: 2px solid red;
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    @extend %bordered;
+    text-align: left
+}
+h2{
+    @extend %bordered;
+}
