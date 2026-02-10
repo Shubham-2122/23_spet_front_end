@@ -1,0 +1,24 @@
+@bg-color : rgb(228, 156, 10);
+@color : rgb(162, 147, 147);
+@size : 50px;
+
+
+.list{
+    list-style: none;
+    li{
+        display: inline-block;
+        background-color: @bg-color;
+        padding: 10px 20px;
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        &:hover{
+            background-color: lightcoral;
+        }
+        &:hover a{
+            color: white;
+        }
+    }
+}
+

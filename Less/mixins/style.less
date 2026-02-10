@@ -1,0 +1,37 @@
+.bordered(){
+    border: 5px solid red;
+}
+
+.border(@size,@color){
+    border: @size solid @color;
+}
+
+.flexd(@data){
+    display: flex;
+    justify-content: @data;
+}
+
+#h1{
+    .bordered();
+}
+
+#data{
+    .border(10px,blue);
+    padding: 10px;
+}
+
+h2{
+    .border(5px,green);
+}
+
+.main{
+    .box{
+        height: 200px;
+        width: 200px;
+        .bordered();
+    }
+    .flexd(space-between);
+    @media only screen and (max-width : 768px) {
+        .flexd(center);
+    }
+}
