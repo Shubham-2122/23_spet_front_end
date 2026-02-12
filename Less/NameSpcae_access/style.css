@@ -1,0 +1,27 @@
+#btn {
+  background: linear-gradient(red, green, blue);
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid;
+}
+#btn:hover {
+  background: lightcoral;
+}
+#btn1 {
+  background: lightcoral;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid;
+}
+#btn1:hover {
+  background: lightgreen;
+}
+#data {
+  background: linear-gradient(red, green, blue);
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid;
+}
+#data:hover {
+  background: lightcoral;
+}
